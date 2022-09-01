@@ -841,4 +841,8 @@ body {
   .underline {
     display: none;
   }
+}
+html, body {
+  overflow-x: hidden !important;
+  width: 100vw !important;
 }/*# sourceMappingURL=style.css.map */
