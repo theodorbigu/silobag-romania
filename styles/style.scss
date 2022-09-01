@@ -1,0 +1,28 @@
+@import "./navbar";
+@import "./hero";
+@import "./variables";
+@import "./de-ce-noi";
+@import "./despre-noi";
+@import "./galerie";
+@import "./footer";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: "Poppins";
+  //background: $navbar-green;
+}
+
+
+
+@media (max-width: 1080px) {
+  .underline {
+    display: none;
+  }
+}
+

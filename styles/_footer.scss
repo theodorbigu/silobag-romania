@@ -1,0 +1,140 @@
+@import "./variables";
+
+footer {
+  position: relative;
+  //top: -5rem;
+  //border-top: 2px solid $text-grey;
+  background: $navbar-green;
+  height: 50rem;
+  width: 100%;
+  position: relative;
+  color: rgba(39, 39, 39, 0.796);
+  .footer-line {
+    content: "";
+    position: absolute;
+    //left: 0;
+    top: -10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $text-grey;
+    height: 1px;
+    width: 80%;
+  }
+  .footer-content {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: fa-solid {
+      //font-size: large;
+    }
+    .fa-solid {
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: translateY(-0.5rem);
+        transition: all 0.3s ease;
+        color: black;
+      }
+    }
+    .socials {
+      display: flex;
+      gap: 5rem;
+
+      .fa-brands {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.3s ease;
+          color: black;
+        }
+      }
+    }
+    .links {
+      display: flex;
+      gap: 4.75rem;
+      font-size: 1.5rem;
+      a {
+        text-align: center;
+      }
+    }
+    .copyright {
+      text-align: center;
+      //align-self: flex-end;
+      //margin-top: 10rem;
+    }
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    //min-width: 50%;
+    height: auto;
+    border: none;
+  }
+}
+
+.links a:hover {
+  color: black;
+  -webkit-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+.links a::after {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  content: "";
+  opacity: 0;
+  -webkit-transition: width 0.6s, opacity 0.8s;
+  -moz-transition: width 0.6s, opacity 0.8s;
+  transition: width 0.6s, opacity 0.8s;
+}
+
+.links a:hover::after,
+.links a:focus::after {
+  opacity: 1;
+  width: 100%;
+}
+
+@media (max-width: 1600px) {
+  footer {
+    .footer-content {
+      height: 70%;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  footer {
+    height: 40rem;
+    .footer-content {
+      height: 90%;
+      .socials {
+        order: 3;
+      }
+      .links {
+        flex-direction: column;
+        gap: 1.6rem;
+        order: 2;
+      }
+      .copyright {
+        order: 4;
+      }
+    }
+    img {
+      display: none;
+    }
+  }
+}

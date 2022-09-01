@@ -1,0 +1,119 @@
+@import "./variables";
+
+.despre-noi {
+  position: relative;
+  //top: -5rem;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  //width: 100vw;
+  //border: 1px solid red;
+
+  .black-bg-overlay-despre-noi {
+    //display: none;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.71);
+    outline: 4px solid white;
+    outline-style: ridge;
+    outline-offset: -10px;
+  }
+
+  .despre-noi-poza {
+    /* min-height: 800px; */
+    width: 100%;
+    //max-width: 50%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    //right: -50px;
+    //z-index: -1;
+  }
+
+  .despre-noi-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //margin: 0 30rem;
+    z-index: 1;
+    color: white;
+    width: 50%;
+    h1 {
+      //color: black;
+      //text-align: left;
+      font-size: 5rem;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    h3 {
+      margin-bottom: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      //font-size: 3rem;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .grain-svg {
+      //   position: absolute;
+      //   right: 10rem;
+      //   top: 5rem;
+      //border: 1px solid black;
+      //margin-left: 15rem;
+      //width: 2000px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 70%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .despre-noi {
+    top: 0;
+    .despre-noi-content {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .despre-noi {
+    .despre-noi-content {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .despre-noi {
+    //top: 50rem;
+    .despre-noi-content {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+      .grain-svg {
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
