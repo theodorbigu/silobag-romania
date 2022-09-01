@@ -65,10 +65,19 @@
       .action-btn {
         border: none;
         color: white;
-        font-size: 1.5rem;
-        background: $action-green;
-        padding: 0.6rem 1.8rem;
+        font-size: 1.3rem;
+        padding: 0.8rem 2.4rem;
+        color: $action-green;
+        background-color: transparent;
+        border: 3px solid $action-green;
         cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $action-green;
+          color: white;
+          transition: all 0.3s ease;
+        }
       }
       .mobile {
         display: none;

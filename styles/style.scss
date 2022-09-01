@@ -5,6 +5,7 @@
 @import "./despre-noi";
 @import "./galerie";
 @import "./footer";
+@import "./silobags";
 
 * {
   box-sizing: border-box;
@@ -18,13 +19,16 @@ body {
   //background: $navbar-green;
 }
 
-
-
 @media (max-width: 1080px) {
   .underline {
     display: none;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
- html, body {overflow-x: hidden !important;}
-
+html,
+body {
+  overflow-x: hidden !important;
+}

@@ -23,11 +23,17 @@
   z-index: 3;
   display: block;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 0.8rem 2.4rem;
-  color: white;
+  color: #377b2b;
+  background-color: transparent;
+  border: 3px solid #377b2b;
+  transition: all 0.3s ease;
+}
+.navbar-links .contact-btn:hover {
   background-color: #377b2b;
-  border: none;
+  color: white;
+  transition: all 0.3s ease;
 }
 
 .navbar-links ul {
@@ -148,6 +154,7 @@
     font-size: 3rem;
     background: transparent;
     color: #377b2b;
+    border: none;
   }
   .navbar .navbar-links .contact-btn:hover {
     background-color: white;
@@ -237,10 +244,18 @@
 .hero .hero-content .action-content .action-btn {
   border: none;
   color: white;
-  font-size: 1.5rem;
-  background: #377b2b;
-  padding: 0.6rem 1.8rem;
+  font-size: 1.3rem;
+  padding: 0.8rem 2.4rem;
+  color: #377b2b;
+  background-color: transparent;
+  border: 3px solid #377b2b;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hero .hero-content .action-content .action-btn:hover {
+  background-color: #377b2b;
+  color: white;
+  transition: all 0.3s ease;
 }
 .hero .hero-content .action-content .mobile {
   display: none;
@@ -923,6 +938,57 @@ footer img {
     transform: scale(0.7);
   }
 }
+.silobags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.silobags .silobags-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  height: auto;
+  margin-top: 5rem;
+}
+.silobags .silobags-content .silobags-content1 {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+.silobags .silobags-content .silobags-content1 .titlu-p h1 {
+  position: relative;
+  font-size: 5rem;
+  font-weight: 400;
+}
+.silobags .silobags-content .silobags-content1 .titlu-p #silobags-underline {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #000000;
+  height: 6px;
+  box-sizing: border-box;
+  width: 20%;
+}
+.silobags .silobags-content .silobags-content1 .titlu-p p {
+  font-size: 1.2rem;
+}
+.silobags .silobags-content .silobags-content1 img {
+  max-width: 60%;
+  height: auto;
+}
+.silobags .silobags-content .silobags-content2 {
+  display: flex;
+  gap: 5rem;
+}
+.silobags .silobags-content .silobags-content2 p {
+  font-size: 1.2rem;
+}
+.silobags .silobags-content .silobags-content2 img {
+  max-width: 50%;
+  height: auto;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -939,6 +1005,11 @@ body {
     display: none;
   }
 }
-html, body {
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
   overflow-x: hidden !important;
 }/*# sourceMappingURL=style.css.map */

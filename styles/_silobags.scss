@@ -1,0 +1,64 @@
+@import "./variables";
+
+.silobags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .silobags-content {
+    //border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    //margin: 10rem;
+    max-width: 75%;
+    height: auto;
+    margin-top: 5rem;
+
+    .silobags-content1 {
+      display: flex;
+      //border: 1px solid green;
+      gap: 5rem;
+      margin-bottom: 5rem;
+      .titlu-p {
+        //width: 40%;
+
+        h1 {
+          position: relative;
+          font-size: 5rem;
+          font-weight: 400;
+        }
+        #silobags-underline {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          background-color: #000000;
+          height: 6px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          width: 20%;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      img {
+        max-width: 60%;
+        height: auto;
+      }
+    }
+    .silobags-content2 {
+      display: flex;
+      //border: 1px solid blue;
+      gap: 5rem;
+      p {
+        //height: 100%;
+        font-size: 1.2rem;
+      }
+      img {
+        max-width: 50%;
+        //height: 50%;
+        height: auto;
+      }
+    }
+  }
+}
