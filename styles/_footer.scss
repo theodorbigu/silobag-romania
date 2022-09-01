@@ -138,3 +138,21 @@ footer {
     }
   }
 }
+
+@media (max-width: 1080px) {
+  footer {
+    height: 40rem;
+    .footer-content {
+      height: 90%;
+
+      .socials {
+        transform: scale(0.7);
+        gap: 3rem;
+      }
+      .copyright {
+        //margin-top: 5rem;
+        transform: scale(0.7);
+      }
+    }
+  }
+}
