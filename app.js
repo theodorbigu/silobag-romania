@@ -9,6 +9,20 @@ toggleButton.addEventListener("click", () => {
   navbar.classList.toggle("navbar-bg");
 });
 
+
+// lottie-hero:
+
+const svgContainerHero = document.getElementById("hero-lottie");
+const animItemHero = bodymovin.loadAnimation({
+  wrapper: svgContainerHero,
+  animType: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./lotties/hero-arrow.json",
+});
+
+
+
 // lottie-galerie:
 
 const svgContainerLeft = document.getElementById("galerie-lottie-left");
@@ -17,7 +31,7 @@ const animItemLeft = bodymovin.loadAnimation({
   animType: "svg",
   loop: true,
   autoplay: true,
-  path: "./lotties/lf30_editor_sihjzzzx.json",
+  path: "./lotties/galerie.json",
 });
 
 const svgContainerRight = document.getElementById("galerie-lottie-right");
@@ -28,3 +42,6 @@ const animItemRight = bodymovin.loadAnimation({
   autoplay: true,
   path: "./lotties/lf30_editor_sihjzzzx.json",
 });
+
+
+
