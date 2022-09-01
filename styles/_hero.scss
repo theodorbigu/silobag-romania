@@ -151,3 +151,41 @@
     display: block;
   }
 }
+
+@media (max-width: 500px) {
+  .hero {
+    height: 100vh;
+    width: 100%;
+    //display: none;
+
+    .hero-content {
+      height: 60%;
+      width: 80vw;
+      h1 {
+        color: white;
+        font-size: 2.4rem;
+        font-weight: 400;
+        span {
+          font-weight: 700;
+        }
+      }
+      p {
+        font-size: 0.7rem;
+        color: #a5a5a5;
+      }
+      .action-content {
+        display: flex;
+        margin-top: 3rem;
+        .action-btn {
+          font-size: 1rem;
+        }
+        .mobile {
+          display: block;
+        }
+        .desktop {
+          display: none;
+        }
+      }
+    }
+  }
+}

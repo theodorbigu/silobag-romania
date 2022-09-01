@@ -323,6 +323,41 @@
     display: block;
   }
 }
+@media (max-width: 500px) {
+  .hero {
+    height: 100vh;
+    width: 100%;
+  }
+  .hero .hero-content {
+    height: 60%;
+    width: 80vw;
+  }
+  .hero .hero-content h1 {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  .hero .hero-content h1 span {
+    font-weight: 700;
+  }
+  .hero .hero-content p {
+    font-size: 0.7rem;
+    color: #a5a5a5;
+  }
+  .hero .hero-content .action-content {
+    display: flex;
+    margin-top: 3rem;
+  }
+  .hero .hero-content .action-content .action-btn {
+    font-size: 1rem;
+  }
+  .hero .hero-content .action-content .mobile {
+    display: block;
+  }
+  .hero .hero-content .action-content .desktop {
+    display: none;
+  }
+}
 .de-ce-noi {
   border: 1px solid #f2f7f1;
   position: relative;
