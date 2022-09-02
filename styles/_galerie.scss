@@ -113,6 +113,8 @@
   width: 20%;
 }
 
+
+
 @media (max-width: 1280px) {
   .galerie {
     .galerie-content {
@@ -164,11 +166,11 @@
         overflow-x: auto;
         overscroll-behavior-inline: contain;
         //border: 1px solid red;
-        .bg-fade-left{
+        .bg-fade-left {
           position: absolute;
           height: 22rem;
         }
-        #galerie-lottie-left{
+        #galerie-lottie-left {
           position: absolute;
           //border: 1px solid red;
           width: 70px;
@@ -177,7 +179,7 @@
           left: 2rem;
           transform: rotate(180deg);
         }
-        #galerie-lottie-right{
+        #galerie-lottie-right {
           position: absolute;
           //border: 1px solid red;
           width: 70px;
@@ -186,7 +188,7 @@
           right: 2rem;
           //transform: rotate(180deg);
         }
-        .bg-fade-right{
+        .bg-fade-right {
           transform: rotate(180deg);
           position: absolute;
           right: 0;

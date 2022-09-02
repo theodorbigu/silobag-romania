@@ -31,7 +31,7 @@ const animItemLeft = bodymovin.loadAnimation({
   animType: "svg",
   loop: true,
   autoplay: true,
-  path: "./lotties/galerie.json",
+  path: "../lotties/galerie.json",
 });
 
 const svgContainerRight = document.getElementById("galerie-lottie-right");
@@ -40,7 +40,7 @@ const animItemRight = bodymovin.loadAnimation({
   animType: "svg",
   loop: true,
   autoplay: true,
-  path: "./lotties/lf30_editor_sihjzzzx.json",
+  path: "../lotties/galerie.json",
 });
 
 
