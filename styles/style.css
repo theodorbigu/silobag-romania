@@ -1065,6 +1065,49 @@ footer img {
   background-image: url(../images/silobags/galerie-6.jpg);
 }
 
+@media (max-width: 1280px) {
+  .silobags .silobags-content .silobags-content1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .silobags .silobags-content .silobags-content1 .info-pret {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .silobags .silobags-content .silobags-content1 .info-pret h1 {
+    position: relative;
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  .silobags .silobags-content .silobags-content1 .info-pret #silobags-underline {
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+  }
+  .silobags .silobags-content .silobags-content1 .info-pret p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .silobags .silobags-content .silobags-content1 img {
+    max-width: 80%;
+  }
+  .silobags .silobags-content .silobags-content2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .silobags .silobags-content .silobags-content2 img {
+    display: none;
+  }
+  .silobags .silobags-content .silobags-content2 p {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
 @media (max-width: 1080px) {
   #galerie-silobags .galerie-content {
     max-width: 100%;
