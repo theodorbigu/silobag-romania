@@ -28,12 +28,15 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    gap: fa-solid {
-      //font-size: large;
+
+    a{
+      color: $text-grey;
     }
+
     .fa-solid {
       cursor: pointer;
       transition: all 0.3s ease;
+      //color: $text-grey;
       &:hover {
         transform: translateY(-0.5rem);
         transition: all 0.3s ease;
@@ -60,6 +63,7 @@ footer {
       font-size: 1.5rem;
       a {
         text-align: center;
+        text-decoration: none;
       }
     }
     .copyright {

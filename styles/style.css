@@ -828,7 +828,9 @@ footer .footer-content {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: fa-solid;
+}
+footer .footer-content a {
+  color: #878787;
 }
 footer .footer-content .fa-solid {
   cursor: pointer;
@@ -859,6 +861,7 @@ footer .footer-content .links {
 }
 footer .footer-content .links a {
   text-align: center;
+  text-decoration: none;
 }
 footer .footer-content .copyright {
   text-align: center;
@@ -1082,11 +1085,6 @@ body {
   font-family: "Poppins";
 }
 
-@media (max-width: 1080px) {
-  .underline {
-    display: none;
-  }
-}
 html {
   scroll-behavior: smooth;
 }
@@ -1094,4 +1092,14 @@ html {
 html,
 body {
   overflow-x: hidden !important;
+}
+
+@media (max-width: 1080px) {
+  .underline {
+    display: none;
+  }
+  html,
+body {
+    width: 100vw !important;
+  }
 }/*# sourceMappingURL=style.css.map */

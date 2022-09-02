@@ -19,11 +19,6 @@ body {
   //background: $navbar-green;
 }
 
-@media (max-width: 1080px) {
-  .underline {
-    display: none;
-  }
-}
 html {
   scroll-behavior: smooth;
 }
@@ -31,4 +26,14 @@ html {
 html,
 body {
   overflow-x: hidden !important;
+}
+
+@media (max-width: 1080px) {
+  .underline {
+    display: none;
+  }
+  html,
+  body {
+    width: 100vw !important;
+  }
 }
