@@ -637,8 +637,7 @@
   justify-items: center;
   grid-template-areas: "titlu titlu poza2" "poza1 poza1 poza2" "poza3 poza4 poza4" "poza5 poza5 poza6";
   grid-template-columns: 2fr 1fr 2fr;
-  grid-template-rows: 30rem 40rem 40rem 40rem;
-  grid-template-rows: 20rem 30rem 30rem 30rem;
+  grid-template-rows: 20rem 30rem 30rem 30rem 30rem;
 }
 .galerie .galerie-content #titlu-galerie {
   grid-area: titlu;
@@ -693,6 +692,10 @@
 .galerie .galerie-content #poza-galerie6 {
   grid-area: poza6;
   background-image: url(../images/galerie6.jpg);
+}
+.galerie .galerie-content #poza-galerie7 {
+  grid-area: poza7;
+  background-image: url(../images/galerie7.jpg);
 }
 .galerie .galerie-content .galerie-mobile {
   display: none;
@@ -975,7 +978,7 @@ footer img {
   width: 20%;
 }
 .silobags .silobags-content .silobags-content1 .info-pret p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .silobags .silobags-content .silobags-content1 .info-pret .pret {
   display: flex;
@@ -1025,12 +1028,36 @@ footer img {
   display: flex;
   gap: 5rem;
 }
-.silobags .silobags-content .silobags-content2 p {
-  font-size: 1.2rem;
-}
 .silobags .silobags-content .silobags-content2 img {
   max-width: 50%;
   height: auto;
+}
+.silobags .silobags-content .silobags-content2 .info-nota p {
+  font-size: 1rem;
+}
+.silobags .silobags-content .silobags-content2 .info-nota .nota {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.silobags .silobags-content .silobags-content2 .info-nota .nota h1 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.silobags .silobags-content .silobags-content2 .info-nota .nota table {
+  max-width: 80%;
+  height: auto;
+}
+.silobags .silobags-content .silobags-content2 .info-nota .nota table td {
+  padding: 10px 10px 0;
+  border: 2px solid black;
 }
 
 #galerie-silobags {
@@ -1063,6 +1090,30 @@ footer img {
 #galerie-silobags .galerie-content #poza-galerie6 {
   grid-area: poza6;
   background-image: url(../images/silobags/galerie-6.jpg);
+}
+#galerie-silobags .nota-tabel {
+  grid-area: titlu;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30rem;
+  height: 36rem;
+}
+#galerie-silobags .nota-tabel h1 {
+  position: relative;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+  width: 100%;
+}
+#galerie-silobags .nota-tabel table {
+  width: 100%;
+  text-align: left;
+  color: #878787;
+  margin-top: 4rem;
 }
 
 @media (max-width: 1280px) {
@@ -1111,6 +1162,9 @@ footer img {
 @media (max-width: 1080px) {
   #galerie-silobags .galerie-content {
     max-width: 100%;
+  }
+  #galerie-silobags #nota-tabel-mobile {
+    display: block;
   }
 }
 #produse-footer {

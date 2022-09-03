@@ -22,8 +22,9 @@
       "poza3 poza4 poza4"
       "poza5 poza5 poza6";
     grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 30rem 40rem 40rem 40rem;
-    grid-template-rows: 20rem 30rem 30rem 30rem;
+    //grid-template-rows: 30rem 40rem 40rem 40rem;
+    grid-template-rows: 20rem 30rem 30rem 30rem 30rem;
+    
 
     #titlu-galerie {
       grid-area: titlu;
@@ -92,6 +93,12 @@
     #poza-galerie6 {
       grid-area: poza6;
       background-image: url(../images/galerie6.jpg);
+      // width: 28rem;
+      // height: 34rem;
+    }
+    #poza-galerie7 {
+      grid-area: poza7;
+      background-image: url(../images/galerie7.jpg);
       // width: 28rem;
       // height: 34rem;
     }
