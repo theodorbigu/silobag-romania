@@ -637,7 +637,7 @@
   justify-items: center;
   grid-template-areas: "titlu titlu poza2" "poza1 poza1 poza2" "poza3 poza4 poza4" "poza5 poza5 poza6";
   grid-template-columns: 2fr 1fr 2fr;
-  grid-template-rows: 20rem 30rem 30rem 30rem 30rem;
+  grid-template-rows: 20rem 30rem 30rem 30rem;
 }
 .galerie .galerie-content #titlu-galerie {
   grid-area: titlu;
@@ -1052,12 +1052,13 @@ footer img {
   width: 100%;
 }
 .silobags .silobags-content .silobags-content2 .info-nota .nota table {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
 }
 .silobags .silobags-content .silobags-content2 .info-nota .nota table td {
+  font-size: 1.2rem;
   padding: 10px 10px 0;
-  border: 2px solid black;
+  border: 2.5px solid black;
 }
 
 #galerie-silobags {
@@ -1090,30 +1091,6 @@ footer img {
 #galerie-silobags .galerie-content #poza-galerie6 {
   grid-area: poza6;
   background-image: url(../images/silobags/galerie-6.jpg);
-}
-#galerie-silobags .nota-tabel {
-  grid-area: titlu;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 30rem;
-  height: 36rem;
-}
-#galerie-silobags .nota-tabel h1 {
-  position: relative;
-  font-size: 4rem;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: left;
-  width: 100%;
-}
-#galerie-silobags .nota-tabel table {
-  width: 100%;
-  text-align: left;
-  color: #878787;
-  margin-top: 4rem;
 }
 
 @media (max-width: 1280px) {
@@ -1163,8 +1140,237 @@ footer img {
   #galerie-silobags .galerie-content {
     max-width: 100%;
   }
-  #galerie-silobags #nota-tabel-mobile {
-    display: block;
+}
+#produse-footer {
+  background: white;
+}
+
+.utilaje .utilaje-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  height: auto;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.utilaje .utilaje-content .info-pret h1 {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.utilaje .utilaje-content .info-pret p {
+  font-size: 1rem;
+  line-height: 200%;
+}
+.utilaje .utilaje-content .info-pret .pret {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.utilaje .utilaje-content .info-pret .pret h2 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.utilaje .utilaje-content .info-pret .pret p {
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+.utilaje .utilaje-content .info-pret .contact {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 2rem;
+}
+.utilaje .utilaje-content .info-pret .contact a {
+  text-decoration: none;
+  color: black;
+}
+.utilaje .utilaje-content .info-pret .contact a .fa-square-facebook {
+  transition: all 0.3s ease;
+}
+.utilaje .utilaje-content .info-pret .contact a .fa-square-facebook:hover {
+  color: #4267b2;
+  transition: all 0.2s ease;
+  transform: scale(1.1);
+}
+.utilaje .utilaje-content .info-pret .contact a .fa-square-whatsapp {
+  transition: all 0.3s ease;
+}
+.utilaje .utilaje-content .info-pret .contact a .fa-square-whatsapp:hover {
+  color: #25d366;
+  transition: all 0.2s ease;
+  transform: scale(1.1);
+}
+.utilaje .utilaje-content .utilaje-incarcatoare {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+.utilaje .utilaje-content .utilaje-incarcatoare img {
+  max-width: 60%;
+  height: auto;
+}
+.utilaje .utilaje-content .utilaje-extractoare {
+  display: flex;
+  gap: 5rem;
+}
+.utilaje .utilaje-content .utilaje-extractoare img {
+  max-width: 60%;
+  height: auto;
+}
+.utilaje .utilaje-content .utilaje-extractoare .info-nota p {
+  font-size: 1rem;
+}
+.utilaje .utilaje-content .utilaje-extractoare .info-nota .nota {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.utilaje .utilaje-content .utilaje-extractoare .info-nota .nota h1 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.utilaje .utilaje-content .utilaje-extractoare .info-nota .nota table {
+  max-width: 100%;
+  height: auto;
+}
+.utilaje .utilaje-content .utilaje-extractoare .info-nota .nota table td {
+  font-size: 1.2rem;
+  padding: 10px 10px 0;
+  border: 2.5px solid black;
+}
+
+#galerie-utilaje {
+  background: white;
+}
+#galerie-utilaje .galerie-content {
+  max-width: 75%;
+}
+#galerie-utilaje .galerie-content #poza-galerie1 {
+  grid-area: poza1;
+  background-image: url(../images/utilaje/galerie1.jpg);
+}
+#galerie-utilaje .galerie-content #poza-galerie2 {
+  grid-area: poza2;
+  background-image: url(../images/utilaje/galerie2.jpg);
+}
+#galerie-utilaje .galerie-content #poza-galerie3 {
+  grid-area: poza3;
+  background-image: url(../images/utilaje/galerie3.jpg);
+  background-position: center;
+}
+#galerie-utilaje .galerie-content #poza-galerie4 {
+  grid-area: poza4;
+  background-image: url(../images/utilaje/galerie4.jpg);
+}
+#galerie-utilaje .galerie-content #poza-galerie5 {
+  grid-area: poza5;
+  background-image: url(../images/utilaje/galerie5.jpg);
+}
+#galerie-utilaje .galerie-content #poza-galerie6 {
+  grid-area: poza6;
+  background-image: url(../images/utilaje/galerie6.jpg);
+}
+
+@media (max-width: 1280px) {
+  .utilaje .utilaje-content {
+    max-width: 80%;
+  }
+  .utilaje .utilaje-content .utilaje-incarcatoare {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-top: 10rem;
+  }
+  .utilaje .utilaje-content .utilaje-incarcatoare .info-pret {
+    order: 2;
+    text-align: center;
+  }
+  .utilaje .utilaje-content .utilaje-incarcatoare .info-pret h1 {
+    text-align: center;
+  }
+  .utilaje .utilaje-content .utilaje-incarcatoare .info-pret .info {
+    font-size: 1rem;
+  }
+  .utilaje .utilaje-content .utilaje-incarcatoare .info-pret .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .utilaje .utilaje-content .utilaje-incarcatoare img {
+    order: 1;
+    max-width: 80%;
+  }
+  .utilaje .utilaje-content .utilaje-extractoare {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-top: 10rem;
+  }
+  .utilaje .utilaje-content .utilaje-extractoare .info-pret {
+    order: 2;
+    text-align: center;
+  }
+  .utilaje .utilaje-content .utilaje-extractoare .info-pret h1 {
+    text-align: center;
+  }
+  .utilaje .utilaje-content .utilaje-extractoare .info-pret .info {
+    font-size: 1rem;
+  }
+  .utilaje .utilaje-content .utilaje-extractoare .info-pret .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .utilaje .utilaje-content .utilaje-extractoare img {
+    position: relative;
+    max-width: 80%;
+    left: 10%;
+  }
+}
+@media (max-width: 1080px) {
+  #galerie-utilaje .galerie-content {
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .utilaje .utilaje-content {
+    max-width: 80%;
+  }
+  .utilaje .utilaje-content .utilaje-incarcatoare .info-pret h1 {
+    font-size: 1.3rem;
+  }
+  .utilaje .utilaje-content .utilaje-incarcatoare .info-pret .pret h2 {
+    font-size: 2rem;
+  }
+  .utilaje .utilaje-content .utilaje-incarcatoare .info-pret .info {
+    font-size: 0.8rem;
+  }
+  .utilaje .utilaje-content .utilaje-extractoare .info-pret h1 {
+    font-size: 1.3rem;
+  }
+  .utilaje .utilaje-content .utilaje-extractoare .info-pret .pret h2 {
+    font-size: 2rem;
+  }
+  .utilaje .utilaje-content .utilaje-extractoare .info-pret .info {
+    font-size: 0.8rem;
+  }
+  .utilaje .utilaje-content .utilaje-extractoare img {
+    position: relative;
+    max-width: 80%;
+    left: 10%;
   }
 }
 #produse-footer {

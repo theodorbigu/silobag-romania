@@ -120,12 +120,13 @@
             width: 100%;
           }
           table {
-            max-width: 80%;
+            max-width: 100%;
             height: auto;
             //border: 2px solid black;
             td {
+              font-size: 1.2rem;
               padding: 10px 10px 0;
-              border: 2px solid black;
+              border: 2.5px solid black;
             }
           }
         }
@@ -176,30 +177,6 @@
       //background-position: center;
       // width: 28rem;
       // height: 34rem;
-    }
-  }
-  .nota-tabel {
-    grid-area: titlu;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 30rem;
-    height: 36rem;
-    h1 {
-      position: relative;
-      font-size: 4rem;
-      font-weight: 400;
-      margin-top: 0;
-      margin-bottom: 0;
-      text-align: left;
-      width: 100%;
-    }
-    table {
-      width: 100%;
-      text-align: left;
-      color: $text-grey;
-      margin-top: 4rem;
     }
   }
 }
@@ -261,12 +238,7 @@
     .galerie-content {
       max-width: 100%;
     }
-    #nota-tabel-mobile {
-      display: block;
-    }
-    // #nota-tabel-desktop{
-    //   display: none;
-    // }
+
   }
 }
 
