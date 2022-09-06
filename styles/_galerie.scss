@@ -167,7 +167,7 @@
         grid-auto-rows: 50%;
         overflow-x: auto;
         overscroll-behavior-inline: contain;
-        border: 1px solid red;
+        //border: 1px solid green;
         .bg-fade-left {
           position: absolute;
           height: 22rem;
@@ -198,14 +198,13 @@
         }
         .media-element {
           display: grid;
-          //grid-template-rows: min-content;
           gap: 3rem;
-
         }
         .media-element > img {
           inline-size: 100%;
           aspect-ratio: 9 / 16;
           height: 22rem;
+          //width: 22rem;
           //max-width: 80vw;
           object-fit: cover;
         }
