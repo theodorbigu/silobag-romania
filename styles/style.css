@@ -1344,6 +1344,9 @@ footer img {
   #galerie-utilaje .galerie-content {
     max-width: 100%;
   }
+  .galerie-mobile {
+    max-width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .utilaje .utilaje-content {
