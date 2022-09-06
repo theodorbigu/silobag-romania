@@ -164,9 +164,10 @@
         gap: 3rem;
         grid-auto-flow: column;
         grid-auto-columns: 50%;
+        grid-auto-rows: 50%;
         overflow-x: auto;
         overscroll-behavior-inline: contain;
-        //border: 1px solid red;
+        border: 1px solid red;
         .bg-fade-left {
           position: absolute;
           height: 22rem;
