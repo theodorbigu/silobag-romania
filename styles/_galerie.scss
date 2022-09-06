@@ -206,12 +206,13 @@
           //grid-template-rows: min-content;
           gap: 3rem;
           //padding: 3rem;
+          max-width: 80vw;
         }
         .media-element > img {
           inline-size: 100%;
           aspect-ratio: 9 / 16;
           height: 22rem;
-          max-width: 80vw;
+          //max-width: 80vw;
           object-fit: cover;
         }
         .snaps-inline {

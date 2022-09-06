@@ -782,12 +782,12 @@
   .galerie .galerie-content .galerie-mobile .media-element {
     display: grid;
     gap: 3rem;
+    max-width: 80vw;
   }
   .galerie .galerie-content .galerie-mobile .media-element > img {
     inline-size: 100%;
     aspect-ratio: 9/16;
     height: 22rem;
-    max-width: 80vw;
     -o-object-fit: cover;
        object-fit: cover;
   }
