@@ -203,7 +203,7 @@
         }
         .media-element {
           display: grid;
-          grid-template-rows: min-content;
+          //grid-template-rows: min-content;
           gap: 3rem;
           //padding: 3rem;
         }
@@ -216,7 +216,7 @@
         }
         .snaps-inline {
           scroll-snap-type: inline mandatory;
-          scroll-padding-inline: var(3rem, 1rem);
+          scroll-padding-inline: 3rem;
         }
 
         .snaps-inline > * {

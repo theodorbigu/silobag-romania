@@ -781,8 +781,6 @@
   }
   .galerie .galerie-content .galerie-mobile .media-element {
     display: grid;
-    grid-template-rows: -webkit-min-content;
-    grid-template-rows: min-content;
     gap: 3rem;
   }
   .galerie .galerie-content .galerie-mobile .media-element > img {
@@ -796,7 +794,7 @@
   .galerie .galerie-content .galerie-mobile .snaps-inline {
     -ms-scroll-snap-type: inline mandatory;
         scroll-snap-type: inline mandatory;
-    scroll-padding-inline: var(3rem, 1rem);
+    scroll-padding-inline: 3rem;
   }
   .galerie .galerie-content .galerie-mobile .snaps-inline > * {
     scroll-snap-align: start;
