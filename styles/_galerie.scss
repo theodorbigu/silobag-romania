@@ -24,7 +24,6 @@
     grid-template-columns: 2fr 1fr 2fr;
     //grid-template-rows: 30rem 40rem 40rem 40rem;
     grid-template-rows: 20rem 30rem 30rem 30rem;
-    
 
     #titlu-galerie {
       grid-area: titlu;
@@ -120,8 +119,6 @@
   width: 20%;
 }
 
-
-
 @media (max-width: 1280px) {
   .galerie {
     .galerie-content {
@@ -166,10 +163,7 @@
         display: grid;
         gap: 3rem;
         grid-auto-flow: column;
-        grid-auto-columns: 60%;
-
-        //padding: 3rem;
-
+        grid-auto-columns: 50%;
         overflow-x: auto;
         overscroll-behavior-inline: contain;
         //border: 1px solid red;
@@ -205,8 +199,7 @@
           display: grid;
           //grid-template-rows: min-content;
           gap: 3rem;
-          //padding: 3rem;
-          max-width: 80vw;
+
         }
         .media-element > img {
           inline-size: 100%;

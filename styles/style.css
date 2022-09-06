@@ -750,7 +750,7 @@
     display: grid;
     gap: 3rem;
     grid-auto-flow: column;
-    grid-auto-columns: 60%;
+    grid-auto-columns: 50%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
   }
@@ -782,7 +782,6 @@
   .galerie .galerie-content .galerie-mobile .media-element {
     display: grid;
     gap: 3rem;
-    max-width: 80vw;
   }
   .galerie .galerie-content .galerie-mobile .media-element > img {
     inline-size: 100%;
