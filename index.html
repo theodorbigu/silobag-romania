@@ -24,7 +24,9 @@
   <body>
     <nav class="navbar">
       <div class="navbar-logo">
-        <img src="./images/navbar-logo.png" alt="logo" />
+        <a href="#">
+          <img src="./images/navbar-logo.png" alt="logo" />
+        </a>
       </div>
       <a href="#" class="toggle-button">
         <span class="bar bar1"></span>
@@ -34,10 +36,15 @@
       <div class="navbar-links">
         <ul>
           <li><a href="#despre-noi">Despre</a></li>
-          <li><a href="./html/silobags.html">Silobags</a></li>
+          <li><a href="/html/silobags.html">Silobags</a></li>
           <li><a href="/html/utilaje.html">Utilaje</a></li>
         </ul>
-        <button class="contact-btn">Contact</button>
+        <button
+          onclick="window.location.href='/html/contact.html';"
+          class="contact-btn"
+        >
+          Contact
+        </button>
       </div>
     </nav>
 
@@ -52,9 +59,24 @@
           tenetur, sequi, officia fuga?
         </p>
         <div class="action-content">
-          <button class="action-btn mobile">Silobags</button>
-          <button class="action-btn mobile">Utilaje</button>
-          <button class="action-btn desktop">Află mai multe</button>
+          <button
+            onclick="window.location.href='/html/silobags.html';"
+            class="action-btn mobile"
+          >
+            Silobags
+          </button>
+          <button
+            onclick="window.location.href='/html/utilaje.html';"
+            class="action-btn mobile"
+          >
+            Utilaje
+          </button>
+          <button
+            onclick="window.location.href='#despre-noi';"
+            class="action-btn desktop"
+          >
+            Află mai multe
+          </button>
         </div>
       </div>
       <!-- <img

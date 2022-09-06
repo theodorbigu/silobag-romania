@@ -10,9 +10,11 @@
   //width:50%;
 }
 
+
 .navbar-logo img {
   width: 10rem;
   margin: 1rem 5vw;
+  pointer-events: fill;
 }
 
 .navbar-links {
@@ -137,6 +139,7 @@
     flex-direction: column;
     align-items: flex-start;
     background-color: transparent;
+    pointer-events: none;
     .navbar-links {
       opacity: 0;
       transform: translateY(-150%);
@@ -185,6 +188,7 @@
 
   .toggle-button {
     display: flex;
+    pointer-events: fill;
   }
 
   .navbar-links.active {
@@ -212,4 +216,5 @@
 
 .navbar-bg {
   background: black;
+  pointer-events: fill;
 }

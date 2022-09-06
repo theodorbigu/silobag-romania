@@ -100,6 +100,10 @@
         height: auto;
       }
       .info-nota {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         p {
           //height: 100%;
           font-size: 1rem;
@@ -198,7 +202,7 @@
             font-size: 4rem;
             font-weight: 400;
           }
-          
+
           #silobags-underline {
             left: 0;
             bottom: 0;
@@ -224,10 +228,12 @@
         img {
           display: none;
         }
-        p {
-          text-align: center;
-          font-size: 1rem;
-          //height: 50%;
+        .info-nota {
+          p {
+            text-align: center;
+            //font-size: 0.8rem;
+            //max-width: 80vw;
+          }
         }
       }
     }
@@ -242,6 +248,20 @@
   }
 }
 
-#produse-footer {
-  background: white;
+@media (max-width: 500px) {
+  .silobags {
+    .silobags-content {
+      .silobags-content2 {
+        .info-nota {
+          p {
+            font-size: 0.8rem;
+            max-width: 80vw;
+          }
+          .nota {
+            transform: scale(0.7);
+          }
+        }
+      }
+    }
+  }
 }
