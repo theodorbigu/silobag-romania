@@ -178,8 +178,10 @@
         font-size: 3rem;
         background: transparent;
         color: $action-green;
+        transition: all 0.3s ease;
         &:hover {
           background-color: white;
+          transition: all 0.3s ease;
         }
         border: none;
       }
@@ -218,5 +220,3 @@
   background: black;
   pointer-events: fill;
 }
-
-
