@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #f2f7f1;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo img {
@@ -119,6 +120,7 @@
     align-items: flex-start;
     background-color: transparent;
     pointer-events: none;
+    box-shadow: none;
   }
   .navbar .navbar-links {
     opacity: 0;
@@ -949,6 +951,14 @@ footer img {
     transform: scale(0.7);
   }
 }
+#produse-footer {
+  background: white;
+}
+
+#contact-footer {
+  height: 25rem;
+}
+
 .silobags {
   display: flex;
   justify-content: center;
@@ -1392,10 +1402,26 @@ footer img {
     left: 10%;
   }
 }
-#produse-footer {
-  background: white;
+.contact-body {
+  background: #f2f7f1;
 }
 
+#contact {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  margin-bottom: 10rem;
+  width: 50%;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
 * {
   box-sizing: border-box;
 }

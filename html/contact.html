@@ -21,8 +21,8 @@
     <script src="../app.js" async></script>
     <title>Contact</title>
   </head>
-  <body>
-    <nav class="navbar">
+  <body class="contact-body">
+    <nav class="navbar contact-navbar">
       <div class="navbar-logo">
         <a href="../index.html">
           <img src="../images/navbar-logo.png" alt="logo" />
@@ -36,27 +36,79 @@
       <div class="navbar-links">
         <ul>
           <li><a href="../index.html">Despre</a></li>
-          <li><a href="#">Silobags</a></li>
+          <li><a href="./silobags.html">Silobags</a></li>
           <li><a href="./utilaje.html">Utilaje</a></li>
         </ul>
-        <button class="contact-btn">Contact</button>
+        <button
+          onclick="window.location.href='/html/contact.html';"
+          class="contact-btn"
+        >
+          Contact
+        </button>
       </div>
     </nav>
 
     <!-- ######################## -->
 
     <section id="contact">
-        <h1></h1>
-        <div class="contact-content">
-
+      <h1></h1>
+      <div class="contact-content">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="400"
+              height="600"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Strada%20Prim%C4%83verii%2040,%20Roman&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe
+            ><a href="https://123movies-to.org">123movies</a><br /><style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 600px;
+                width: 400px;
+              }</style
+            ><a href="https://www.embedgooglemap.net">embed map google</a
+            ><style>
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 600px;
+                width: 400px;
+              }
+            </style>
+          </div>
         </div>
+        <div class="contact-info">
+          <h1>Contact</h1>
+          <div class="contact-el">
+            <i class="fa-regular fa-at"></i>
+            <p>gktagri@gmail.com</p>
+          </div>
+          <div class="contact-el">
+            <i class="fa-solid fa-phone"></i>
+            <p>+4 0752.942.481</p>
+          </div>
+          <div class="contact-el">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+              Strada Primăverii nr. 40 <br />Roman, Neamț <br />
+              România
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ######################## -->
 
-    <footer id="produse-footer">
+    <footer id="contact-footer">
       <span class="footer-line"></span>
-      <div class="footer-content">
+      <!--<div class="footer-content">
         <a href="#">
           <i class="fa-solid fa-angle-up fa-4x"></i>
         </a>
@@ -87,7 +139,7 @@
             >th.</a
           >
         </div>
-      </div>
+      </div> -->
       <img src="../images/footer-no-bg-short.svg" />
     </footer>
     <script

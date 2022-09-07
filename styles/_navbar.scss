@@ -8,8 +8,8 @@
   align-items: center;
   background-color: $navbar-green;
   //width:50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
-
 
 .navbar-logo img {
   width: 10rem;
@@ -37,7 +37,6 @@
     border: 3px solid $action-green;
     transition: all 0.3s ease;
 
-    
     &:hover {
       background-color: $action-green;
       color: white;
@@ -140,6 +139,7 @@
     align-items: flex-start;
     background-color: transparent;
     pointer-events: none;
+    box-shadow: none;
     .navbar-links {
       opacity: 0;
       transform: translateY(-150%);
@@ -218,3 +218,5 @@
   background: black;
   pointer-events: fill;
 }
+
+

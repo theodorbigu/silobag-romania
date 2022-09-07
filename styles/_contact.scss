@@ -1,0 +1,32 @@
+@import "./variables";
+
+.contact-body {
+  background: $navbar-green;
+}
+
+#contact {
+  position: relative;
+  //background: $navbar-green;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //top: -2rem;
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    //border: 1px solid red;
+    margin-bottom: 10rem;
+    width: 50%;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    .mapouter {
+      //border: 1px solid blue;
+    }
+    .contact-info {
+      //border: 1px solid blue;
+      //width: 30%;
+    }
+  }
+}
