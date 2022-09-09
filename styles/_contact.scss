@@ -11,22 +11,123 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
+  padding: 25rem 0;
   //top: -2rem;
   .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    flex-direction: row;
+    //flex-direction: column;
     //border: 1px solid red;
-    margin-bottom: 10rem;
-    width: 50%;
+    //margin-bottom: 10rem;
+    //max-width: 50%;
+    //height: auto;
     background: white;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     // .mapouter {
     //   //border: 1px solid blue;
     // }
-    // .contact-info {
-    //   //border: 1px solid blue;
-    //   //width: 30%;
-    // }
+    .contact-info {
+      //border: 1px solid blue;
+      display: flex;
+      justify-content: center;
+      align-items: left;
+      flex-direction: column;
+      width: 400px;
+      height: 600px;
+      padding: 2rem;
+      h1 {
+        font-size: 3rem;
+        letter-spacing: 4px;
+        color: $action-green;
+      }
+      .contact-el {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        p {
+          font-size: 1.2rem;
+        }
+        .fa-regular {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $action-green;
+        }
+        .fa-solid {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $action-green;
+        }
+      }
+    }
+    .mapouter {
+      height: 600px;
+      width: 400px;
+      .gmap_canvas {
+        height: 600px;
+        width: 400px;
+        iframe {
+          width: 400px;
+          height: 600px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  #contact {
+    .contact-content {
+      .contact-info {
+        width: 300px;
+        height: 450px;
+        h1 {
+          font-size: 2.25rem;
+        }
+        .contact-el {
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+      .mapouter {
+        height: 450px;
+        width: 300px;
+        .gmap_canvas {
+          height: 450px;
+          width: 300px;
+          iframe {
+            height: 450px;
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+  #contact-footer {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #contact {
+    padding: 40rem 0;
+    .contact-content {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      .contact-info {
+        h1 {
+          text-align: center;
+        }
+      }
+      .mapouter {
+        order: 2;
+      }
+    }
+  }
+  #contact-footer {
+    display: none;
   }
 }

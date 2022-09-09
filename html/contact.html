@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="../images/favicon-no-bg.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/style.css" />
     <script src="../app.js" defer></script>
@@ -52,13 +53,10 @@
     <!-- ######################## -->
 
     <section id="contact">
-      <h1></h1>
       <div class="contact-content">
-        <div class="mapouter">
+        <div data-aos="fade-down" data-aos-delay="800" class="mapouter">
           <div class="gmap_canvas">
             <iframe
-              width="400"
-              height="600"
               id="gmap_canvas"
               src="https://maps.google.com/maps?q=Strada%20Prim%C4%83verii%2040,%20Roman&t=&z=13&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
@@ -70,32 +68,28 @@
               .mapouter {
                 position: relative;
                 text-align: right;
-                height: 600px;
-                width: 400px;
               }</style
             ><a href="https://www.embedgooglemap.net">embed map google</a
             ><style>
               .gmap_canvas {
                 overflow: hidden;
                 background: none !important;
-                height: 600px;
-                width: 400px;
               }
             </style>
           </div>
         </div>
         <div class="contact-info">
-          <h1>Contact</h1>
-          <div class="contact-el">
-            <i class="fa-regular fa-at"></i>
+          <h1 data-aos="fade-down">CONTACT</h1>
+          <div data-aos="fade-down" data-aos-delay="200" class="contact-el">
+            <i class="fa-regular fa-at fa-2x"></i>
             <p>gktagri@gmail.com</p>
           </div>
-          <div class="contact-el">
-            <i class="fa-solid fa-phone"></i>
+          <div data-aos="fade-down" data-aos-delay="400" class="contact-el">
+            <i class="fa-solid fa-phone fa-2x"></i>
             <p>+4 0752.942.481</p>
           </div>
-          <div class="contact-el">
-            <i class="fa-solid fa-location-dot"></i>
+          <div data-aos="fade-down" data-aos-delay="600" class="contact-el">
+            <i class="fa-solid fa-location-dot fa-2x"></i>
             <p>
               Strada Primăverii nr. 40 <br />Roman, Neamț <br />
               România
@@ -108,7 +102,7 @@
     <!-- ######################## -->
 
     <footer id="contact-footer">
-      <span class="footer-line"></span>
+      <!-- <span class="footer-line"></span> -->
       <!--<div class="footer-content">
         <a href="#">
           <i class="fa-solid fa-angle-up fa-4x"></i>

@@ -5,7 +5,7 @@ footer {
   //top: -5rem;
   //border-top: 2px solid $text-grey;
   background: $navbar-green;
-  height: 45rem;
+  height: 38rem;
   width: 100%;
   position: relative;
   color: rgba(39, 39, 39, 0.796);
@@ -60,7 +60,7 @@ footer {
     .links {
       display: flex;
       gap: 4.75rem;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       a {
         text-align: center;
         text-decoration: none;
@@ -68,6 +68,7 @@ footer {
     }
     .copyright {
       text-align: center;
+      font-size: 0.8rem;
       //align-self: flex-end;
       //margin-top: 10rem;
     }
