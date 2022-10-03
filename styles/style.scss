@@ -30,6 +30,23 @@ body {
   overflow-x: hidden !important;
 }
 
+#whatsapp-contact-fixed {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10;
+  img {
+    width: 70px;
+    height: 70px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-0.5rem);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
 @media (max-width: 1080px) {
   .underline {
     display: none;
