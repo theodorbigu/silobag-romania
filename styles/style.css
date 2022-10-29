@@ -1177,7 +1177,7 @@ footer img {
 .utilaje .utilaje-content {
   display: flex;
   flex-direction: column;
-  max-width: 75%;
+  max-width: 80%;
   height: auto;
   margin-top: 5rem;
   margin-left: auto;
@@ -1189,7 +1189,7 @@ footer img {
   font-weight: 400;
 }
 .utilaje .utilaje-content .info-pret p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 200%;
 }
 .utilaje .utilaje-content .info-pret .pret {
@@ -1336,12 +1336,17 @@ footer img {
   .utilaje .utilaje-content .utilaje-incarcatoare .info-pret {
     order: 2;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .utilaje .utilaje-content .utilaje-incarcatoare .info-pret h1 {
     text-align: center;
   }
   .utilaje .utilaje-content .utilaje-incarcatoare .info-pret .info {
-    font-size: 1rem;
+    font-size: 0.7rem;
+    width: 50%;
   }
   .utilaje .utilaje-content .utilaje-incarcatoare .info-pret .contact {
     display: flex;
@@ -1362,12 +1367,17 @@ footer img {
   .utilaje .utilaje-content .utilaje-extractoare .info-pret {
     order: 2;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .utilaje .utilaje-content .utilaje-extractoare .info-pret h1 {
     text-align: center;
   }
   .utilaje .utilaje-content .utilaje-extractoare .info-pret .info {
-    font-size: 1rem;
+    font-size: 0.7rem;
+    width: 50%;
   }
   .utilaje .utilaje-content .utilaje-extractoare .info-pret .contact {
     display: flex;
@@ -1400,6 +1410,7 @@ footer img {
   }
   .utilaje .utilaje-content .utilaje-incarcatoare .info-pret .info {
     font-size: 0.8rem;
+    width: 100%;
   }
   .utilaje .utilaje-content .utilaje-extractoare .info-pret h1 {
     font-size: 1.3rem;
@@ -1409,6 +1420,7 @@ footer img {
   }
   .utilaje .utilaje-content .utilaje-extractoare .info-pret .info {
     font-size: 0.8rem;
+    width: 100%;
   }
   .utilaje .utilaje-content .utilaje-extractoare img {
     position: relative;
