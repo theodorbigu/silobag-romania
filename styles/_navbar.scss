@@ -11,10 +11,23 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
+.navbar-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar-logo img {
   width: 10rem;
   margin: 1rem 5vw;
   pointer-events: fill;
+  margin-bottom: 0;
+}
+
+.navbar-logo p{
+  margin-top: 0;
+  color: $action-green;
 }
 
 .navbar-links {
