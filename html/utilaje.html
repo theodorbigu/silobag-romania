@@ -21,12 +21,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/style.css" />
     <script src="../app.js" defer></script>
+    <script src="../router.js" defer></script>
     <title>Utilaje</title>
   </head>
   <body>
     <nav class="navbar">
       <div class="navbar-logo">
-        <a href="../index.html">
+        <a class="link" href="/">
           <img src="../images/navbar-logo.png" alt="logo" />
         </a>
         <p>+4 0744.303.793</p>
@@ -38,9 +39,9 @@
       </a>
       <div class="navbar-links">
         <ul>
-          <li><a href="../index.html">Despre</a></li>
-          <li><a href="./silobags.html">Silobags</a></li>
-          <li><a href="#">Utilaje</a></li>
+          <li><a class="link" href="/">Despre</a></li>
+          <li><a class="link" href="/silobags">Silobags</a></li>
+          <li><a class="link" href="/utilaje">Utilaje</a></li>
         </ul>
         <button
           onclick="window.location.href='/html/contact.html';"
@@ -55,7 +56,7 @@
 
     <div id="utilaje-meniu" class="utilaje">
       <div class="utilaj">
-        <a href="./G-65.html">
+        <a id="link" href="/G65">
           <img src="../images/utilaje/utilaje-poza-3.jpg" />
 
           <h3>
@@ -65,7 +66,7 @@
         </a>
       </div>
       <div class="utilaj">
-        <a href="./G-65-FULL.html">
+        <a class="link" href="./G-65-FULL.html">
           <img src="../images/utilaje/utilaje-poza-4.jpg" />
 
           <h3>
@@ -110,7 +111,7 @@
         </a>
       </div>
       <div class="utilaj">
-        <a href="./RSA.html">
+        <a class="link" href="/RSA">
           <img src="../images/utilaje/utilaje-poza-10.jpg" />
 
           <h3>
@@ -194,10 +195,10 @@
           </a>
         </div>
         <div class="links">
-          <a href="../index.html#despre-noi">Despre</a>
-          <a href="./silobags.html">Silobags</a>
-          <a href="#">Utilaje</a>
-          <a href="./contact.html">Contact</a>
+          <a class="link" href="/">Despre</a>
+          <a class="link" href="/silobags">Silobags</a>
+          <a class="link" href="/utilaje">Utilaje</a>
+          <a class="link" href="/contact">Contact</a>
         </div>
         <div class="copyright">
           © 2022 Silobag Rmania <br />

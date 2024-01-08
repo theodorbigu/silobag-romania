@@ -21,6 +21,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/style.css" />
     <script src="../app.js" defer></script>
+    <script src="../router.js"></script>
     <!-- <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
@@ -40,7 +41,7 @@ cb=googleTranslateElementInit"
   <body>
     <nav class="navbar">
       <div class="navbar-logo">
-        <a href="../index.html">
+        <a class="link" href="/">
           <img src="../images/navbar-logo.png" alt="logo" />
         </a>
         <p>+4 0744.303.793</p>
@@ -53,13 +54,13 @@ cb=googleTranslateElementInit"
       </a>
       <div class="navbar-links">
         <ul>
-          <li><a href="../index.html">Despre</a></li>
-          <li><a href="#">Silobags</a></li>
-          <li><a href="./utilaje.html">Utilaje</a></li>
+          <li><a class="link" href="/">Despre</a></li>
+          <li><a class="link" href="/silobags">Silobags</a></li>
+          <li><a class="link" href="/utilaje">Utilaje</a></li>
         </ul>
         <button
           onclick="window.location.href='/html/contact.html';"
-          class="contact-btn"
+          class="contact-btn link"
         >
           Contact
         </button>
@@ -285,10 +286,10 @@ cb=googleTranslateElementInit"
           </a>
         </div>
         <div class="links">
-          <a href="../index.html#despre-noi">Despre</a>
-          <a href="#">Silobags</a>
-          <a href="./utilaje.html">Utilaje</a>
-          <a href="./contact.html">Contact</a>
+          <a class="link" href="/">Despre</a>
+          <a class="link" href="/silobags">Silobags</a>
+          <a class="link" href="/utilaje">Utilaje</a>
+          <a class="link" href="/contact">Contact</a>
         </div>
         <div class="copyright">
           © 2022 Silobag Rmania <br />

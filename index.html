@@ -21,12 +21,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="./app.js" defer></script>
+    <script src="/router.js"></script>
     <title>Silobag-Romania</title>
   </head>
-  <body>
+  <body id="body">
     <nav class="navbar">
       <div data-aos="fade-down" data-aos-delay="100" class="navbar-logo">
-        <a href="#">
+        <a class="link" href="/">
           <img src="./images/navbar-logo.png" alt="logo" />
         </a>
         <p>+4 0744.303.793</p>
@@ -42,16 +43,16 @@
             <a href="#despre-noi">Despre</a>
           </li>
           <li data-aos="fade-down" data-aos-delay="350">
-            <a href="/html/silobags.html">Silobags</a>
+            <a class="link" href="/silobags">Silobags</a>
           </li>
           <li data-aos="fade-down" data-aos-delay="500">
-            <a href="/html/utilaje.html">Utilaje</a>
+            <a class="link" href="/utilaje">Utilaje</a>
           </li>
         </ul>
         <button
           data-aos="fade-down"
           onclick="window.location.href='/html/contact.html';"
-          class="contact-btn"
+          class="contact-btn link"
         >
           Contact
         </button>
@@ -67,9 +68,7 @@
           fermierilor solutia SiloBag. Saci silobag, utilaje de incarcare si
           extractie silobag.
         </p>
-        <p class="info-butoane"> 
-          Apasă pentru mai multe informații
-        </p>
+        <p class="info-butoane">Apasă pentru mai multe informații</p>
         <div class="action-content">
           <button
             onclick="window.location.href='/html/silobags.html';"
@@ -131,7 +130,7 @@
 
     <section class="de-ce-noi">
       <div data-aos="zoom-in" class="titlu">
-        <h1 style="text-align:center">Avantajele noastre:</h1>
+        <h1 style="text-align: center">Avantajele noastre:</h1>
       </div>
       <div class="de-ce-noi-content">
         <div class="patru-patrate">
@@ -247,10 +246,10 @@
           </a>
         </div>
         <div class="links">
-          <a href="#despre-noi">Despre</a>
-          <a href="./html/silobags.html">Silobags</a>
-          <a href="./html/utilaje.html">Utilaje</a>
-          <a href="./html/contact.html">Contact</a>
+          <a class="link" href="/">Despre</a>
+          <a class="link" href="/silobags">Silobags</a>
+          <a class="link" href="/utilaje">Utilaje</a>
+          <a class="link" href="/contact">Contact</a>
         </div>
         <div class="copyright">
           © 2022 Silobag Rmania <br />

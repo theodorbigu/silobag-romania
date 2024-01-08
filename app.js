@@ -9,6 +9,7 @@ toggleButton.addEventListener("click", () => {
   navbar.classList.toggle("navbar-bg");
 });
 
+
 // lottie-hero:
 
 const svgContainerHero = document.getElementById("hero-lottie");
@@ -53,3 +54,5 @@ AOS.init({
 });
 
 AOS.disableALL();
+
+
